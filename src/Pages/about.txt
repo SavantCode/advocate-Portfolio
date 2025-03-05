@@ -1,0 +1,124 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+const About = () => {
+  return (
+    <div className="bg-gray-900 text-white">
+      {/* Hero Section */}
+      <div
+        className="relative h-[50vh] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('https://source.unsplash.com/1600x900/?law,courtroom,justice')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <motion.h1
+          className="text-4xl sm:text-5xl font-bold text-yellow-400 relative z-10 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          Advocate [Your Name]  
+          <br /> Madhya Pradesh High Court
+        </motion.h1>
+      </div>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-6 py-12">
+        <motion.div
+          className="bg-gray-800 rounded-lg shadow-lg p-8 max-w-4xl mx-auto"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          {/* Introduction */}
+          <h2 className="text-3xl font-semibold text-yellow-400 mb-4">About Advocate [Your Name]</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Advocate [Your Name] is a highly experienced legal professional practicing at the  
+            <strong> Madhya Pradesh High Court</strong>. With **[X years]** of experience, he has successfully represented  
+            numerous clients in **[Criminal Law, Civil Litigation, Corporate Law, etc.]**.
+          </p>
+
+          {/* Professional Experience */}
+          <h3 className="text-2xl font-semibold text-yellow-400 mt-6">Professional Experience</h3>
+          <ul className="list-disc pl-6 text-gray-300">
+            <li><strong>[X Years] of Legal Practice</strong> at Madhya Pradesh High Court.</li>
+            <li>Specialized in **[Criminal Law, Constitutional Matters, Corporate Law]**.</li>
+            <li>Successfully handled **[X+] cases** with high success rates.</li>
+            <li>Represented clients in complex **litigation, arbitration, and legal advisory**.</li>
+          </ul>
+
+          {/* Education & Credentials */}
+          <h3 className="text-2xl font-semibold text-yellow-400 mt-6">Education & Credentials</h3>
+          <ul className="list-disc pl-6 text-gray-300">
+            <li><strong>LLB</strong> from [University Name]</li>
+            <li><strong>LLM</strong> in [Specialization] from [University Name]</li>
+            <li>Enrolled with the <strong>Bar Council of India</strong></li>
+            <li>Member of **[Legal Association Name]**</li>
+          </ul>
+
+          {/* Legal Expertise */}
+          <h3 className="text-2xl font-semibold text-yellow-400 mt-6">Legal Expertise</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+            {[
+              "Criminal Law",
+              "Civil Litigation",
+              "Corporate Law",
+              "Family Law",
+              "Constitutional Matters",
+              "Arbitration & Mediation",
+            ].map((field) => (
+              <motion.div
+                key={field}
+                className="p-4 bg-gray-700 rounded-lg shadow text-center"
+                whileHover={{ scale: 1.05 }}
+              >
+                {field}
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Legal Philosophy */}
+          <h3 className="text-2xl font-semibold text-yellow-400 mt-6">Legal Philosophy & Approach</h3>
+          <p className="text-gray-300 leading-relaxed">
+            I believe in **justice, integrity, and transparency**. My approach is client-centric,  
+            ensuring personalized legal strategies tailored to each case. I uphold the **highest legal  
+            ethics** while representing my clients with dedication.
+          </p>
+
+          {/* Client Testimonials */}
+          <h3 className="text-2xl font-semibold text-yellow-400 mt-6">Client Testimonials</h3>
+          <div className="bg-gray-700 p-4 rounded-lg shadow mt-2">
+            <p className="text-gray-300 italic">  
+              “Advocate [Your Name] handled my case with the utmost professionalism.  
+              His expertise in [law field] ensured a successful outcome. Highly recommended!”  
+            </p>
+            <p className="text-yellow-300 text-right mt-2">- Client Name</p>
+          </div>
+
+          {/* Professional Associations */}
+          <h3 className="text-2xl font-semibold text-yellow-400 mt-6">Professional Associations & Recognitions</h3>
+          <ul className="list-disc pl-6 text-gray-300">
+            <li>Registered Advocate at <strong>Madhya Pradesh High Court</strong></li>
+            <li>Member of <strong>[Legal Organization]</strong></li>
+            <li>Recipient of <strong>[Legal Award Name]</strong> for outstanding contributions to law</li>
+          </ul>
+        </motion.div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="bg-yellow-400 text-gray-900 py-8 text-center">
+        <h3 className="text-2xl font-bold">Need Legal Assistance?</h3>
+        <p className="mt-2">Book a consultation today and get expert legal advice.</p>
+        <a
+          href="/appointment"
+          className="inline-block mt-4 bg-gray-900 text-yellow-300 px-6 py-2 rounded-lg font-semibold hover:bg-gray-700"
+        >
+          Book an Appointment
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default About;
