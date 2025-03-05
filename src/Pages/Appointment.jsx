@@ -27,7 +27,7 @@ const BookAppointment = () => {
           <div className="mt-4">
             {/* Calendly Embed - Replace href with your Calendly link */}
             <iframe
-              src="https://calendly.com/YOUR-CALENDLY-USERNAME"
+              src="https://www.wikipedia.org/"
               className="w-full h-[600px] border-none rounded-md"
               loading="lazy"
             ></iframe>

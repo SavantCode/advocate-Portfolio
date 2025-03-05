@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaCalendarAlt, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { InlineWidget } from "react-calendly";
 
 const BookAppointment = () => {
   return (
-    <section className="py-16 px-6 sm:px-12 bg-gray-900 text-white text-center">
+    <section className="py-16 px-4 sm:px-12 bg-gray-900 text-white text-center min-h-screen">
       {/* Page Header */}
       <motion.h2
         className="text-3xl sm:text-4xl font-bold text-yellow-400"
@@ -18,19 +19,20 @@ const BookAppointment = () => {
         Book a one-on-one consultation with <span className="text-yellow-400 font-semibold">Adv. Brajendra Singh Kushwaha</span> to discuss your legal matters in detail.
       </p>
 
-      {/* Calendly Embed */}
+      {/* Calendly Inline Widget (No Scrollbar, Responsive) */}
       <div className="mt-10 flex justify-center">
         <div className="w-full max-w-4xl bg-gray-800 p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold text-yellow-400 flex items-center justify-center">
             <FaCalendarAlt className="mr-2" /> Choose a Time Slot
           </h3>
           <div className="mt-4">
-            {/* Calendly Embed - Replace href with your Calendly link */}
-            <iframe
-              src="https://calendly.com/YOUR-CALENDLY-USERNAME"
-              className="w-full h-[600px] border-none rounded-md"
-              loading="lazy"
-            ></iframe>
+            <InlineWidget
+              url="https://calendly.com/rahulkcoding2023/30min"
+              styles={{
+                height: "750px", // Adjusts dynamically, no scrollbar
+                minHeight: "500px", // Works well for mobile
+              }}
+            />
           </div>
         </div>
       </div>
