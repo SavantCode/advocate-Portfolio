@@ -6,8 +6,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   return (
-    <section className="py-9  px-6 bg-gray-900 text-white text-center">
-      {/* Page Title */}
+<section className="py-16 px-6 bg-gray-900 text-white text-center md:py-16">
+
       <motion.h2
         className="text-3xl sm:text-4xl font-semibold text-yellow-400"
         initial={{ opacity: 0, y: -30 }}

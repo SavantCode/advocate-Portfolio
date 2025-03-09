@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
 import BookAppointment from './Pages/BookAppointment';
-
+import NotFound from './Components/NotFound';
 
 import Footer from './Components/Footer'; 
 
@@ -17,6 +17,12 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/book-appointment" element={<BookAppointment />} />
+
+
+        {/* Catch-all route for 404 page */}
+        <Route path="*" element={<NotFound />} /> 
+
+
         
         
       </Routes>
