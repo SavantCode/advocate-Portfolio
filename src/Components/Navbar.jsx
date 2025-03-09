@@ -20,8 +20,8 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-lg">
           <li><Link to="/" className="hover:text-yellow-400">Home</Link></li>
-          <li><Link to="/about" className="hover:text-yellow-400">About</Link></li>
-          <li><Link to="/practice" className="hover:text-yellow-400">Practice</Link></li>
+          
+          
           <li><Link to="/contact" className="hover:text-yellow-400">Contact</Link></li>
           <li><Link to="/book-appointment" className="hover:text-yellow-400">Book Appointment</Link></li>
         </ul>
@@ -40,10 +40,9 @@ const Navbar = () => {
       {isOpen && (
         <ul className="md:hidden bg-gray-800 text-center text-lg py-4 space-y-4">
           <li><Link to="/" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Home</Link></li>
-          <li><Link to="/about" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>About</Link></li>
-          <li><Link to="/practice" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Practice</Link></li>
-          <li><Link to="/testimonials" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Testimonials</Link></li>
+          
           <li><Link to="/contact" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li><Link to="/book-appointment" className="block hover:text-yellow-400" onClick={() => setIsOpen(false)}>Book Appointment</Link></li>
         </ul>
       )}
     </nav>

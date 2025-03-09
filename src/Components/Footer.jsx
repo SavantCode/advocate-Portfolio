@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Logo & About */}
         <div>
           <h2 className="text-2xl font-bold text-yellow-400 flex items-center">
-            Adv. Brajendra Singh Kushwaha
+            Adv. Brajendra Singh
           </h2>
           <p className="mt-3 text-sm">
             Experienced advocate providing expert legal services in Criminal, Civil, Corporate, and Family Law.
@@ -20,10 +20,8 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-yellow-400">Quick Links</h3>
           <ul className="mt-3 space-y-2">
             <li><a href="/" className="hover:text-yellow-500 transition">Home</a></li>
-            <li><a href="/about" className="hover:text-yellow-500 transition">About</a></li>
-            <li><a href="/practice-areas" className="hover:text-yellow-500 transition">Practice Areas</a></li>
-            <li><a href="/testimonials" className="hover:text-yellow-500 transition">Testimonials</a></li>
             <li><a href="/contact" className="hover:text-yellow-500 transition">Contact</a></li>
+            <li><a href="/book-appointment" className="hover:text-yellow-500 transition">Book Appointment</a></li>
           </ul>
         </div>
 
@@ -68,7 +66,7 @@ const Footer = () => {
 
       {/* Copyright Text */}
       <div className="text-center text-sm text-gray-500 mt-6">
-        &copy; {new Date().getFullYear()} Adv. Brajendra Singh Kushwaha. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Adv. Brajendra Singh. All Rights Reserved.
       </div>
     </footer>
   );

@@ -51,7 +51,7 @@ const WhyChoose = () => {
         transition={{ duration: 1 }}
       >
         <a
-          href="/contact"
+          href="/book-appointment"
           className="relative px-7 py-3 sm:px-9 sm:py-4 bg-yellow-500 text-gray-900 font-semibold text-lg sm:text-xl rounded-lg shadow-md transition-all hover:bg-yellow-600 hover:shadow-lg hover:-translate-y-1"
         >
           Get Legal Consultation

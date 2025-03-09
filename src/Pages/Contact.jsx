@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   return (
-    <section className="py-16 px-6 bg-gray-900 text-white text-center">
+    <section className="py-9  px-6 bg-gray-900 text-white text-center">
       {/* Page Title */}
       <motion.h2
         className="text-3xl sm:text-4xl font-semibold text-yellow-400"
@@ -18,7 +20,7 @@ const Contact = () => {
         Get in touch for legal assistance or inquiries.
       </p>
 
-      {/* Contact Form & Info (Balanced Layout) */}
+      {/* Contact Form & Info */}
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto items-center">
         {/* Contact Form */}
         <motion.form
@@ -26,28 +28,45 @@ const Contact = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
+          action="https://formsubmit.co/ca3a0db8922c09fb9b5aaee2871f03ca"
+          method="POST"
+          target="_blank"
         >
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
+            required
             className="w-full p-3 rounded-lg bg-gray-700 text-white text-sm sm:text-base outline-none border border-gray-600 focus:border-yellow-400"
           />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
+            required
             className="w-full p-3 rounded-lg bg-gray-700 text-white text-sm sm:text-base outline-none border border-gray-600 focus:border-yellow-400"
           />
           <textarea
             rows="4"
+            name="message"
             placeholder="Your Message"
+            required
             className="w-full p-3 rounded-lg bg-gray-700 text-white text-sm sm:text-base outline-none border border-gray-600 focus:border-yellow-400"
           ></textarea>
+
+          {/* Hidden Fields for Formsubmit */}
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" /> {/* Optional redirect URL */}
+          <input type="hidden" name="_subject" value="New Contact Form Submission" />
+
+          {/* Submit Button */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
+            type="submit"
+            disabled={loading}
             className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-medium py-3 rounded-lg transition"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </motion.button>
         </motion.form>
 
@@ -79,24 +98,7 @@ const Contact = () => {
         </motion.div>
       </div>
 
-      {/* Google Maps (Optional) */}
-      <motion.div
-        className="mt-10 w-full max-w-4xl mx-auto rounded-xl overflow-hidden border border-gray-700"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <iframe
-          title="Google Map"
-          className="w-full h-56 sm:h-72 md:h-80"
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-          src="https://www.google.com/maps/embed/v1/place?q=New+Delhi+District+Court&key=YOUR_GOOGLE_MAPS_API_KEY"
-          allowFullScreen
-        ></iframe>
-      </motion.div>
+     
     </section>
   );
 };

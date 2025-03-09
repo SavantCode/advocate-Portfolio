@@ -1,91 +1,99 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaQuoteLeft } from "react-icons/fa";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
-// Testimonials data
 const testimonials = [
   {
-    name: "Rahul Sharma",
-    feedback:
-      "Adv. Brajendra Singh Kushwaha provided exceptional legal support. His strategic approach helped me win my case efficiently.",
-    profession: "Business Owner",
+    id: 1,
+    name: "Johnathan Alexander Doe",
+    stars: 5,
+    review: "Amazing experience! Highly recommended. The service was excellent, and the staff was very professional and accommodating. I will definitely be coming back!",
+    dp: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
-    name: "Anjali Verma",
-    feedback:
-      "Very knowledgeable and professional lawyer. He explained everything clearly and kept me informed throughout my case.",
-    profession: "Software Engineer",
+    id: 2,
+    name: "Jane Smith",
+    stars: 4,
+    review: "Great service and friendly staff! I felt really comfortable throughout the process. Will surely recommend to my friends.",
+    dp: "https://randomuser.me/api/portraits/women/2.jpg",
   },
   {
-    name: "Vikram Patel",
-    feedback:
-      "Highly recommended! His expertise in corporate law is outstanding, and he ensured the best outcome for my company.",
-    profession: "Entrepreneur",
+    id: 3,
+    name: "Alex Johnson",
+    stars: 5,
+    review: "Loved the quality and professionalism. It was an overall great experience. I am highly satisfied with the result and would gladly return.",
+    dp: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
-    name: "Pooja Mehra",
-    feedback:
-      "His approach is client-friendly and honest. He provided me with the best legal solutions, and I'm really grateful.",
-    profession: "Doctor",
+    id: 4,
+    name: "Emily Brown",
+    stars: 4,
+    review: "Would definitely come back again! The overall experience was really good, though the wait time could have been better.",
+    dp: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    name: "Sanjay Mehta",
-    feedback:
-      "Outstanding legal knowledge and professionalism. He handled my business case with great expertise and efficiency.",
-    profession: "Startup Founder",
+    id: 5,
+    name: "Michael Lee",
+    stars: 5,
+    review: "Exceptional service and attention to detail! I am beyond satisfied with everything. The team did an amazing job, and I couldn’t be happier.",
+    dp: "https://randomuser.me/api/portraits/men/5.jpg",
   },
-  {
-    name: "Meera Kapoor",
-    feedback:
-      "A highly skilled lawyer who provides clear and strategic legal advice. I felt confident throughout the entire process.",
-    profession: "Marketing Manager",
-  },
-
 ];
 
-const Testimonials = () => {
+const TestimonialSlider = () => {
+  const [expanded, setExpanded] = useState(null); // Store which testimonial is expanded
+
+  const handleReadMore = (id) => {
+    setExpanded((prevState) => (prevState === id ? null : id)); // Toggle expand
+  };
+
   return (
-    <section className="py-16 px-6 bg-gray-900 text-white text-center">
-      {/* Section Title */}
-      <motion.h2
-        className="text-3xl sm:text-4xl font-bold text-yellow-400"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+    <div className="w-full px-4 py-8 bg-gray-900">
+      <Swiper
+        modules={[Autoplay]}
+        spaceBetween={20}
+        loop={true}
+        autoplay={{ delay: 2500 }}
+        speed={1000} // Smoother transition
+        breakpoints={{
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1280: { slidesPerView: 4 },
+        }}
       >
-        What My Clients Say
-      </motion.h2>
-      
-
-      {/* Testimonials Grid */}
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        {testimonials.map((testimonial, index) => (
-          <motion.div
-            key={index}
-            className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:shadow-2xl transition-all duration-200"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.1, ease: "easeOut" }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          >
-            {/* Quote Icon */}
-            <FaQuoteLeft className="text-yellow-500 text-3xl mb-4 mx-auto" />
-            
-            {/* Feedback */}
-            <p className="text-gray-300 italic">"{testimonial.feedback}"</p>
-
-            {/* Client Info */}
-            <div className="mt-4">
-              <h3 className="text-lg font-semibold text-yellow-400">
+        {testimonials.map((testimonial) => (
+          <SwiperSlide key={testimonial.id}>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center transition-transform hover:scale-105 h-full">
+              <img
+                src={testimonial.dp}
+                alt={testimonial.name}
+                className="w-16 h-16 rounded-full object-cover mb-3 border-2 border-gray-200"
+              />
+              <h3 className="text-lg font-semibold w-full break-words">
                 {testimonial.name}
               </h3>
-              <p className="text-sm text-gray-400">{testimonial.profession}</p>
+              <div className="text-yellow-500 text-lg flex gap-1 mt-1">
+                {"⭐".repeat(testimonial.stars)}
+              </div>
+              <p className={`text-gray-600 text-sm mt-2 italic max-w-[90%] transition-all ${expanded === testimonial.id ? "h-auto" : "h-20 overflow-hidden"}`}>
+                "{testimonial.review}"
+              </p>
+              {testimonial.review.length > 100 && (
+                <button
+                  className="mt-2 text-blue-500 hover:underline"
+                  onClick={() => handleReadMore(testimonial.id)}
+                >
+                  {expanded === testimonial.id ? "Read Less" : "Read More"}
+                </button>
+              )}
             </div>
-          </motion.div>
+          </SwiperSlide>
         ))}
-      </div>
-    </section>
+      </Swiper>
+    </div>
   );
 };
 
-export default Testimonials;
+export default TestimonialSlider;
