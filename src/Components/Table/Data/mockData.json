@@ -1,0 +1,768 @@
+[
+  {
+    "id": 1,
+    "dateTime": "01 May, 2025 at 2pm",
+    "status": "Upcoming",
+    "type": "Offline",
+    "buyer": {
+      "name": "MangoCOmpnay",
+      "url": ""
+    },
+    "brand": "Mango",
+    "dept": "Finance",
+    "title": "Demo #1",
+    "meetingDate": "10 May, 2025 at 5pm",
+    "participants": ["Mohd", "Buyer"]
+  },
+  {
+    "id": 2,
+    "dateTime": "01 May, 2025 at 2pm",
+    "status": "Overdue",
+    "type": "Online",
+    "buyer": {
+      "name": "Company 2",
+      "url": "https://company2.com"
+    },
+    "brand": "Pineapple",
+    "dept": "HR",
+    "title": "Review #2",
+    "meetingDate": "10 May, 2025 at 5pm",
+    "participants": ["Mohd", "Buyer", "Sales"]
+  },
+  {
+    "id": 3,
+    "dateTime": "02 May, 2025 at 11am",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Apple Inc.",
+      "url": "https://apple.com"
+    },
+    "brand": "Apple",
+    "dept": "Marketing",
+    "title": "Strategy Meeting #3",
+    "meetingDate": "15 May, 2025 at 3pm",
+    "participants": ["Mohd", "Marketing Lead"]
+  },
+  {
+    "id": 4,
+    "dateTime": "03 May, 2025 at 9am",
+    "status": "Completed",
+    "type": "Offline",
+    "buyer": {
+      "name": "Banana Corp",
+      "url": "https://banana.com"
+    },
+    "brand": "Banana",
+    "dept": "Sales",
+    "title": "Sales Review #4",
+    "meetingDate": "05 May, 2025 at 10am",
+    "participants": ["Mohd", "Sales Team"]
+  },
+  {
+    "id": 5,
+    "dateTime": "04 May, 2025 at 4pm",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Cherry Ltd.",
+      "url": ""
+    },
+    "brand": "Cherry",
+    "dept": "Operations",
+    "title": "Operations Update #5",
+    "meetingDate": "20 May, 2025 at 1pm",
+    "participants": ["Mohd", "Operations Manager"]
+  },
+  {
+    "id": 6,
+    "dateTime": "05 May, 2025 at 3pm",
+    "status": "Cancelled",
+    "type": "Offline",
+    "buyer": {
+      "name": "Date Enterprises",
+      "url": "https://dateenterprises.com"
+    },
+    "brand": "Date",
+    "dept": "Legal",
+    "title": "Compliance Check #6",
+    "meetingDate": "18 May, 2025 at 11am",
+    "participants": ["Mohd", "Legal Team"]
+  },
+  {
+    "id": 7,
+    "dateTime": "06 May, 2025 at 10am",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Elderberry Inc.",
+      "url": ""
+    },
+    "brand": "Elderberry",
+    "dept": "Finance",
+    "title": "Budget Planning #7",
+    "meetingDate": "22 May, 2025 at 9am",
+    "participants": ["Mohd", "Finance Team"]
+  },
+  {
+    "id": 8,
+    "dateTime": "07 May, 2025 at 1pm",
+    "status": "Overdue",
+    "type": "Offline",
+    "buyer": {
+      "name": "Fig Partners",
+      "url": "https://figpartners.com"
+    },
+    "brand": "Fig",
+    "dept": "HR",
+    "title": "Hiring Plan #8",
+    "meetingDate": "12 May, 2025 at 4pm",
+    "participants": ["Mohd", "HR Team"]
+  },
+  {
+    "id": 9,
+    "dateTime": "08 May, 2025 at 5pm",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Grape Solutions",
+      "url": ""
+    },
+    "brand": "Grape",
+    "dept": "IT",
+    "title": "Tech Review #9",
+    "meetingDate": "25 May, 2025 at 3pm",
+    "participants": ["Mohd", "IT Team"]
+  },
+  {
+    "id": 10,
+    "dateTime": "09 May, 2025 at 11am",
+    "status": "Completed",
+    "type": "Offline",
+    "buyer": {
+      "name": "Honeydew LLC",
+      "url": "https://honeydew.com"
+    },
+    "brand": "Honeydew",
+    "dept": "Marketing",
+    "title": "Campaign Analysis #10",
+    "meetingDate": "10 May, 2025 at 2pm",
+    "participants": ["Mohd", "Marketing Team"]
+  },
+  {
+    "id": 11,
+    "dateTime": "10 May, 2025 at 2pm",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Jackfruit Co.",
+      "url": ""
+    },
+    "brand": "Jackfruit",
+    "dept": "Sales",
+    "title": "Client Follow-up #11",
+    "meetingDate": "30 May, 2025 at 4pm",
+    "participants": ["Mohd", "Sales Team"]
+  },
+  {
+    "id": 12,
+    "dateTime": "11 May, 2025 at 3pm",
+    "status": "Upcoming",
+    "type": "Offline",
+    "buyer": {
+      "name": "Kiwi Group",
+      "url": "https://kiwigroup.com"
+    },
+    "brand": "Kiwi",
+    "dept": "Operations",
+    "title": "Logistics Meeting #12",
+    "meetingDate": "01 Jun, 2025 at 10am",
+    "participants": ["Mohd", "Operations"]
+  },
+  {
+    "id": 30,
+    "dateTime": "31 May, 2025 at 10am",
+    "status": "Complete",
+    "type": "Offline",
+    "buyer": {
+      "name": "Berry Corp.",
+      "url": "https://berrycorp.com"
+    },
+    "brand": "Berry",
+    "dept": "Sales",
+    "title": "Final Sales Meeting",
+    "meetingDate": "01 Jun, 2025 at 11am",
+    "participants": ["Mohd", "Sales Team"]
+  },
+  {
+    "id": 31,
+    "dateTime": "01 Jun, 2025 at 3pm",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Citrus Ltd.",
+      "url": "https://citrusltd.com"
+    },
+    "brand": "Citrus",
+    "dept": "IT",
+    "title": "Cloud Migration Planning",
+    "meetingDate": "10 Jun, 2025 at 4pm",
+    "participants": ["Mohd", "IT Team"]
+  },
+  {
+    "id": 32,
+    "dateTime": "02 Jun, 2025 at 9am",
+    "status": "Follow Up",
+    "type": "Offline",
+    "buyer": {
+      "name": "Dragonfruit Inc.",
+      "url": ""
+    },
+    "brand": "Dragonfruit",
+    "dept": "Marketing",
+    "title": "Campaign Review Follow Up",
+    "meetingDate": "12 Jun, 2025 at 10am",
+    "participants": ["Mohd", "Marketing Team"]
+  },
+  {
+    "id": 33,
+    "dateTime": "03 Jun, 2025 at 11am",
+    "status": "Re Scheduled",
+    "type": "Online",
+    "buyer": {
+      "name": "Elderberry Solutions",
+      "url": "https://elderberrysolutions.com"
+    },
+    "brand": "Elderberry",
+    "dept": "Finance",
+    "title": "Budget Re-Planning",
+    "meetingDate": "20 Jun, 2025 at 2pm",
+    "participants": ["Mohd", "Finance Team"]
+  },
+  {
+    "id": 34,
+    "dateTime": "04 Jun, 2025 at 4pm",
+    "status": "Overdue",
+    "type": "Offline",
+    "buyer": {
+      "name": "Fig Ventures",
+      "url": ""
+    },
+    "brand": "Fig",
+    "dept": "HR",
+    "title": "Annual Hiring Review",
+    "meetingDate": "05 Jun, 2025 at 3pm",
+    "participants": ["Mohd", "HR Team"]
+  },
+  {
+    "id": 35,
+    "dateTime": "05 Jun, 2025 at 12pm",
+    "status": "In Progress",
+    "type": "Online",
+    "buyer": {
+      "name": "Grape Corp.",
+      "url": "https://grapecorp.com"
+    },
+    "brand": "Grape",
+    "dept": "Operations",
+    "title": "Logistics Optimization",
+    "meetingDate": "25 Jun, 2025 at 11am",
+    "participants": ["Mohd", "Operations Team"]
+  },
+  {
+    "id": 36,
+    "dateTime": "06 Jun, 2025 at 2pm",
+    "status": "Ongoing",
+    "type": "Offline",
+    "buyer": {
+      "name": "Honeydew LLC",
+      "url": ""
+    },
+    "brand": "Honeydew",
+    "dept": "Legal",
+    "title": "Contract Review",
+    "meetingDate": "28 Jun, 2025 at 1pm",
+    "participants": ["Mohd", "Legal Team"]
+  },
+  {
+    "id": 37,
+    "dateTime": "07 Jun, 2025 at 9am",
+    "status": "Draft",
+    "type": "Online",
+    "buyer": {
+      "name": "Ivy Partners",
+      "url": "https://ivypartners.com"
+    },
+    "brand": "Ivy",
+    "dept": "Marketing",
+    "title": "Draft Campaign Proposal",
+    "meetingDate": "15 Jul, 2025 at 10am",
+    "participants": ["Mohd", "Marketing Team"]
+  },
+  {
+    "id": 38,
+    "dateTime": "08 Jun, 2025 at 3pm",
+    "status": "Archived",
+    "type": "Offline",
+    "buyer": {
+      "name": "Juniper Associates",
+      "url": ""
+    },
+    "brand": "Juniper",
+    "dept": "Finance",
+    "title": "Archived Financial Records Review",
+    "meetingDate": "01 May, 2025 at 9am",
+    "participants": ["Mohd", "Finance Team"]
+  },
+  
+  {
+    "id": 13,
+    "dateTime": "25 Apr, 2025 at 10am",
+    "status": "Complete",
+    "type": "Offline",
+    "buyer": {
+      "name": "Lime Co.",
+      "url": "https://limeco.com"
+    },
+    "brand": "Lime",
+    "dept": "Sales",
+    "title": "Project Closure Meeting",
+    "meetingDate": "26 Apr, 2025 at 11am",
+    "participants": ["Mohd", "Sales Team"]
+  },
+  {
+    "id": 14,
+    "dateTime": "27 Apr, 2025 at 3pm",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "MangoTech",
+      "url": "https://mangotech.com"
+    },
+    "brand": "Mango",
+    "dept": "IT",
+    "title": "System Upgrade Discussion",
+    "meetingDate": "05 May, 2025 at 2pm",
+    "participants": ["Mohd", "IT Team"]
+  },
+  {
+    "id": 15,
+    "dateTime": "28 Apr, 2025 at 9am",
+    "status": "Follow Up",
+    "type": "Offline",
+    "buyer": {
+      "name": "Nectar Inc.",
+      "url": ""
+    },
+    "brand": "Nectar",
+    "dept": "Marketing",
+    "title": "Post Campaign Follow Up",
+    "meetingDate": "08 May, 2025 at 10am",
+    "participants": ["Mohd", "Marketing Team"]
+  },
+  {
+    "id": 16,
+    "dateTime": "29 Apr, 2025 at 11am",
+    "status": "Re Scheduled",
+    "type": "Online",
+    "buyer": {
+      "name": "Olive Ltd.",
+      "url": "https://oliveltd.com"
+    },
+    "brand": "Olive",
+    "dept": "Finance",
+    "title": "Quarterly Budget Meeting",
+    "meetingDate": "15 May, 2025 at 1pm",
+    "participants": ["Mohd", "Finance Team"]
+  },
+  {
+    "id": 17,
+    "dateTime": "30 Apr, 2025 at 4pm",
+    "status": "Overdue",
+    "type": "Offline",
+    "buyer": {
+      "name": "Papaya Group",
+      "url": ""
+    },
+    "brand": "Papaya",
+    "dept": "HR",
+    "title": "Hiring Plan Review",
+    "meetingDate": "02 May, 2025 at 2pm",
+    "participants": ["Mohd", "HR Team"]
+  },
+  {
+    "id": 18,
+    "dateTime": "01 May, 2025 at 12pm",
+    "status": "In Progress",
+    "type": "Online",
+    "buyer": {
+      "name": "Quince Corp.",
+      "url": "https://quincecorp.com"
+    },
+    "brand": "Quince",
+    "dept": "Operations",
+    "title": "Supply Chain Optimization",
+    "meetingDate": "20 May, 2025 at 3pm",
+    "participants": ["Mohd", "Operations"]
+  },
+  {
+    "id": 19,
+    "dateTime": "02 May, 2025 at 2pm",
+    "status": "Ongoing",
+    "type": "Offline",
+    "buyer": {
+      "name": "Raspberry Ventures",
+      "url": ""
+    },
+    "brand": "Raspberry",
+    "dept": "Legal",
+    "title": "Contract Negotiations",
+    "meetingDate": "25 May, 2025 at 11am",
+    "participants": ["Mohd", "Legal Team"]
+  },
+  {
+    "id": 20,
+    "dateTime": "03 May, 2025 at 9am",
+    "status": "Draft",
+    "type": "Online",
+    "buyer": {
+      "name": "Strawberry Partners",
+      "url": "https://strawberrypartners.com"
+    },
+    "brand": "Strawberry",
+    "dept": "Marketing",
+    "title": "New Campaign Draft",
+    "meetingDate": "05 Jun, 2025 at 9am",
+    "participants": ["Mohd", "Marketing"]
+  },
+  {
+    "id": 21,
+    "dateTime": "03 May, 2025 at 9am",
+    "status": "Draft",
+    "type": "Online",
+    "buyer": {
+      "name": "Strawberry Partners",
+      "url": "https://strawberrypartners.com"
+    },
+    "brand": "Strawberry",
+    "dept": "Marketing",
+    "title": "New Campaign Draft",
+    "meetingDate": "05 Jun, 2025 at 9am",
+    "participants": ["Mohd", "Marketing"]
+  },
+  {
+    "id": 22,
+    "dateTime": "03 May, 2025 at 9am",
+    "status": "Draft",
+    "type": "Online",
+    "buyer": {
+      "name": "Strawberry Partners",
+      "url": "https://strawberrypartners.com"
+    },
+    "brand": "Strawberry",
+    "dept": "Marketing",
+    "title": "New Campaign Draft",
+    "meetingDate": "05 Jun, 2025 at 9am",
+    "participants": ["Mohd", "Marketing"]
+  },
+  {
+    "id": 201,
+    "dateTime": "03 May, 2025 at 9am",
+    "status": "Draft",
+    "type": "Online",
+    "buyer": {
+      "name": "Strawberry Partners",
+      "url": "https://strawberrypartners.com"
+    },
+    "brand": "Strawberry",
+    "dept": "Marketing",
+    "title": "New Campaign Draft",
+    "meetingDate": "05 Jun, 2025 at 9am",
+    "participants": ["Mohd", "Marketing"]
+  },
+  {
+    "id": 202,
+    "dateTime": "10 Jul, 2025 at 2pm",
+    "status": "Re Scheduled",
+    "type": "Offline",
+    "buyer": {
+      "name": "Blueberry Ventures",
+      "url": "https://blueberryventures.com"
+    },
+    "brand": "Blueberry",
+    "dept": "Sales",
+    "title": "Product Launch Meeting",
+    "meetingDate": "20 Jul, 2025 at 10am",
+    "participants": ["Alex", "Sales"]
+  },
+  {
+    "id": 203,
+    "dateTime": "11 Jul, 2025 at 11am",
+    "status": "Follow Up",
+    "type": "Online",
+    "buyer": {
+      "name": "Greenfield Co.",
+      "url": "https://greenfieldco.com"
+    },
+    "brand": "Greenfield",
+    "dept": "Customer Success",
+    "title": "Client Feedback Session",
+    "meetingDate": "15 Jul, 2025 at 3pm",
+    "participants": ["Jenna", "CS Team"]
+  },
+  {
+    "id": 204,
+    "dateTime": "12 Jul, 2025 at 9am",
+    "status": "Completed",
+    "type": "Offline",
+    "buyer": {
+      "name": "OrangeTech",
+      "url": "https://orangetech.com"
+    },
+    "brand": "OrangeTech",
+    "dept": "Development",
+    "title": "Sprint Review",
+    "meetingDate": "12 Jul, 2025 at 9am",
+    "participants": ["Mark", "Dev Team"]
+  },
+  {
+    "id": 205,
+    "dateTime": "13 Jul, 2025 at 1pm",
+    "status": "Upcoming",
+    "type": "Online",
+    "buyer": {
+      "name": "Silverline Corp.",
+      "url": "https://silverlinecorp.com"
+    },
+    "brand": "Silverline",
+    "dept": "HR",
+    "title": "Recruitment Drive Planning",
+    "meetingDate": "25 Jul, 2025 at 2pm",
+    "participants": ["Nina", "HR Team"]
+  },
+  {
+    "id": 206,
+    "dateTime": "14 Jul, 2025 at 3pm",
+    "status": "Overdue",
+    "type": "Offline",
+    "buyer": {
+      "name": "Ironclad Industries",
+      "url": "https://ironcladind.com"
+    },
+    "brand": "Ironclad",
+    "dept": "Operations",
+    "title": "Quarterly Audit Follow-Up",
+    "meetingDate": "10 Jul, 2025 at 3pm",
+    "participants": ["Sam", "Ops Team"]
+  },
+  {
+    "id": 207,
+    "dateTime": "15 Jul, 2025 at 10am",
+    "status": "In Progress",
+    "type": "Online",
+    "buyer": {
+      "name": "Golden Gate Ltd.",
+      "url": "https://goldengate.com"
+    },
+    "brand": "Golden Gate",
+    "dept": "Finance",
+    "title": "Budget Review",
+    "meetingDate": "18 Jul, 2025 at 10am",
+    "participants": ["Lara", "Finance Team"]
+  },
+  {
+    "id": 208,
+    "dateTime": "16 Jul, 2025 at 11am",
+    "status": "Draft",
+    "type": "Offline",
+    "buyer": {
+      "name": "Sunrise Media",
+      "url": "https://sunrisemedia.com"
+    },
+    "brand": "Sunrise",
+    "dept": "Marketing",
+    "title": "Ad Campaign Proposal",
+    "meetingDate": "30 Jul, 2025 at 9am",
+    "participants": ["Tina", "Marketing"]
+  },
+  {
+    "id": 209,
+    "dateTime": "17 Jul, 2025 at 2pm",
+    "status": "Archived",
+    "type": "Online",
+    "buyer": {
+      "name": "NovaTech",
+      "url": "https://novatech.com"
+    },
+    "brand": "NovaTech",
+    "dept": "R&D",
+    "title": "Prototype Testing",
+    "meetingDate": "01 Jun, 2025 at 2pm",
+    "participants": ["Evan", "R&D Team"]
+  },
+  {
+    "id": 210,
+    "dateTime": "18 Jul, 2025 at 4pm",
+    "status": "Cancelled",
+    "type": "Offline",
+    "buyer": {
+      "name": "Maple Leaf Group",
+      "url": "https://mapleleafgroup.com"
+    },
+    "brand": "Maple Leaf",
+    "dept": "Customer Service",
+    "title": "Service Improvement Meeting",
+    "meetingDate": "22 Jul, 2025 at 11am",
+    "participants": ["Oliver", "CS Team"]
+  },
+  {
+    "id": 211,
+    "dateTime": "19 Jul, 2025 at 9am",
+    "status": "Re Scheduled",
+    "type": "Online",
+    "buyer": {
+      "name": "Coral Reef Ltd.",
+      "url": "https://coralreef.com"
+    },
+    "brand": "Coral Reef",
+    "dept": "Sales",
+    "title": "Client Contract Discussion",
+    "meetingDate": "29 Jul, 2025 at 10am",
+    "participants": ["Sophia", "Sales Team"]
+  },
+  {
+    "id": 212,
+    "dateTime": "20 Jul, 2025 at 1pm",
+    "status": "Follow Up",
+    "type": "Offline",
+    "buyer": {
+      "name": "Platinum Solutions",
+      "url": "https://platinumsolutions.com"
+    },
+    "brand": "Platinum",
+    "dept": "IT",
+    "title": "System Upgrade Review",
+    "meetingDate": "28 Jul, 2025 at 2pm",
+    "participants": ["James", "IT Team"]
+  },
+  {
+    "id": 213,
+    "dateTime": "21 Jul, 2025 at 3pm",
+    "status": "Completed",
+    "type": "Online",
+    "buyer": {
+      "name": "Emerald Enterprises",
+      "url": "https://emeraldenterprises.com"
+    },
+    "brand": "Emerald",
+    "dept": "Legal",
+    "title": "Contract Signing",
+    "meetingDate": "21 Jul, 2025 at 3pm",
+    "participants": ["Rachel", "Legal Team"]
+  },
+  {
+    "id": 214,
+    "dateTime": "22 Jul, 2025 at 11am",
+    "status": "Upcoming",
+    "type": "Offline",
+    "buyer": {
+      "name": "Diamond Corp.",
+      "url": "https://diamondcorp.com"
+    },
+    "brand": "Diamond",
+    "dept": "Procurement",
+    "title": "Supplier Negotiation",
+    "meetingDate": "02 Aug, 2025 at 10am",
+    "participants": ["Ben", "Procurement"]
+  },
+  {
+    "id": 215,
+    "dateTime": "23 Jul, 2025 at 9am",
+    "status": "Overdue",
+    "type": "Online",
+    "buyer": {
+      "name": "Ruby Tech",
+      "url": "https://rubytech.com"
+    },
+    "brand": "Ruby",
+    "dept": "Support",
+    "title": "Incident Review",
+    "meetingDate": "15 Jul, 2025 at 1pm",
+    "participants": ["Maya", "Support Team"]
+  },
+  {
+    "id": 216,
+    "dateTime": "24 Jul, 2025 at 2pm",
+    "status": "In Progress",
+    "type": "Offline",
+    "buyer": {
+      "name": "Quartz Solutions",
+      "url": "https://quartzsolutions.com"
+    },
+    "brand": "Quartz",
+    "dept": "Engineering",
+    "title": "Feature Development",
+    "meetingDate": "24 Jul, 2025 at 2pm",
+    "participants": ["Liam", "Engineering Team"]
+  },
+  {
+    "id": 217,
+    "dateTime": "25 Jul, 2025 at 10am",
+    "status": "Draft",
+    "type": "Online",
+    "buyer": {
+      "name": "Sapphire Studios",
+      "url": "https://sapphirestudios.com"
+    },
+    "brand": "Sapphire",
+    "dept": "Creative",
+    "title": "Design Concepts",
+    "meetingDate": "10 Aug, 2025 at 11am",
+    "participants": ["Emma", "Creative Team"]
+  },
+  {
+    "id": 218,
+    "dateTime": "26 Jul, 2025 at 4pm",
+    "status": "Archived",
+    "type": "Offline",
+    "buyer": {
+      "name": "Topaz Technologies",
+      "url": "https://topaztech.com"
+    },
+    "brand": "Topaz",
+    "dept": "Research",
+    "title": "Past Project Review",
+    "meetingDate": "01 Jul, 2025 at 3pm",
+    "participants": ["Noah", "Research Team"]
+  },
+  {
+    "id": 219,
+    "dateTime": "27 Jul, 2025 at 3pm",
+    "status": "Cancelled",
+    "type": "Online",
+    "buyer": {
+      "name": "Onyx Group",
+      "url": "https://onyxgroup.com"
+    },
+    "brand": "Onyx",
+    "dept": "Strategy",
+    "title": "Quarterly Planning",
+    "meetingDate": "30 Jul, 2025 at 3pm",
+    "participants": ["Olivia", "Strategy Team"]
+  },
+  {
+    "id": 220,
+    "dateTime": "28 Jul, 2025 at 11am",
+    "status": "Re Scheduled",
+    "type": "Offline",
+    "buyer": {
+      "name": "Jade Enterprises",
+      "url": "https://jadeenterprises.com"
+    },
+    "brand": "Jade",
+    "dept": "Finance",
+    "title": "Year-End Review",
+    "meetingDate": "05 Aug, 2025 at 1pm",
+    "participants": ["Ethan", "Finance"]
+  }
+]

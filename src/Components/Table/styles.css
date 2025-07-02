@@ -1,0 +1,7 @@
+/* Tailwind is primary, additional styles below */
+.bottom-scroll {
+  scrollbar-width: thin;
+}
+.bottom-scroll::-webkit-scrollbar { height: 6px; }
+.bottom-scroll::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+.table-container { max-width: 100%; overflow-x: auto; }

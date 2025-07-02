@@ -1,34 +1,29 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Navbar from './Components/Navbar/Navbar';
+// import BuyerMeetingPage from './Pages/BuyerMeetingPage';  // removed this import
+import DashboardHeader from './Components/DashboardHeader';
+import StatusTable from './Components/Table/StatusTable';
 
-import Navbar from './Components/Navbar';
-import Home from './Pages/Home';
-import Contact from './Pages/Contact';
-import BookAppointment from './Pages/BookAppointment';
-import NotFound from './Components/NotFound';
+function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
-import Footer from './Components/Footer'; 
-
-const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/book-appointment" element={<BookAppointment />} />
+    <div className="flex h-screen overflow-hidden">
+      {sidebarOpen && <Sidebar />}
+      <div className="flex flex-col flex-1">
+        <Navbar toggleSidebar={() => setSidebarOpen((prev) => !prev)} />
 
+        <main className="bg-gray-50 overflow-auto p-4">
+          {/* Dashboard Header added here */}
+          <DashboardHeader />
 
-        {/* Catch-all route for 404 page */}
-        <Route path="*" element={<NotFound />} /> 
-
-
-        
-        
-      </Routes>
-      <Footer />
+          {/* Status Table stays as is */}
+          <StatusTable />
+        </main>
+      </div>
     </div>
   );
-};
+}
 
 export default App;
