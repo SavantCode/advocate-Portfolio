@@ -25,6 +25,13 @@ const BookAppointment = () => {
           <h3 className="text-xl font-semibold text-yellow-400 flex items-center justify-center">
             <FaCalendarAlt className="mr-2" /> Choose a Time Slot
           </h3>
+          <div className="mt-6 p-5 bg-yellow-100 border-2 border-yellow-400 rounded-md shadow-md flex items-start animate-pulse">
+  
+  <p className="text-yellow-800 text-lg font-semibold text-left">
+    <span className="block mb-1">📞 Confirmation Required</span>
+    After scheduling, please <span className="underline">call us at +91 99937 73066</span> to confirm your appointment.
+  </p>
+</div>
           <div className="mt-4">
             <InlineWidget
               url="https://calendly.com/rahulkcoding2023/30min"
@@ -33,6 +40,8 @@ const BookAppointment = () => {
                 minHeight: "500px", // Works well for mobile
               }}
             />
+            
+
           </div>
         </div>
       </div>
@@ -46,7 +55,7 @@ const BookAppointment = () => {
         <ul className="mt-4 space-y-3">
           <li className="flex items-center">
             <FaPhoneAlt className="text-yellow-500 mr-2" />
-            <span>+91 98765 43210</span>
+            <span>+91 99937 73066</span>
           </li>
           <li className="flex items-center">
             <FaEnvelope className="text-yellow-500 mr-2" />

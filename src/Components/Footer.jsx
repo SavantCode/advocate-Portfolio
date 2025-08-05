@@ -31,7 +31,7 @@ const Footer = () => {
           <ul className="mt-3 space-y-3">
             <li className="flex items-center">
               <FaPhoneAlt className="text-yellow-500 mr-2" />
-              +91 98765 43210
+              +91 99937 73066
             </li>
             <li className="flex items-center">
               <FaEnvelope className="text-yellow-500 mr-2" />

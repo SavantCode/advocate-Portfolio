@@ -80,7 +80,7 @@ const Contact = () => {
           <div className="flex items-center gap-4 bg-gray-800 p-4 rounded-xl border border-gray-700">
             <FaPhone className="text-yellow-500 text-lg sm:text-xl" />
             <span className="text-sm sm:text-base text-gray-300">
-              +91 98765 43210
+              +91 99937 73066
             </span>
           </div>
           <div className="flex items-center gap-4 bg-gray-800 p-4 rounded-xl border border-gray-700">
